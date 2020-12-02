@@ -1,8 +1,8 @@
-const colors = require("tailwindcss/colors");
-
 const customColors = {
-  battleshipGrey: "#6b6e7f",
+  battleShipGrey: "#6b6e7f",
 };
+
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   purge: [],
@@ -209,6 +209,7 @@ module.exports = {
         '"Courier New"',
         "monospace",
       ],
+      montSerrat: ["MontSerrat"],
     },
     fontSize: {
       xs: ["0.75rem", { lineHeight: "1rem" }],
