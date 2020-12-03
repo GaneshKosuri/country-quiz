@@ -1,5 +1,5 @@
 const customColors = {
-  battleShipGrey: "#6b6e7f",
+  chambray: "#2F527B",
 };
 
 const colors = require("tailwindcss/colors");
@@ -68,6 +68,10 @@ module.exports = {
       72: "18rem",
       80: "20rem",
       96: "24rem",
+      "10px": "10px",
+      "32px": "32px",
+      "36px": "36px",
+      "464px": "464px",
     },
     animation: {
       none: "none",
@@ -124,6 +128,7 @@ module.exports = {
       "2xl": "1rem",
       "3xl": "1.5rem",
       full: "9999px",
+      "24px": "24px",
     },
     borderWidth: {
       DEFAULT: "1px",
@@ -210,6 +215,7 @@ module.exports = {
         "monospace",
       ],
       montSerrat: ["MontSerrat"],
+      poppins: ["Poppins"],
     },
     fontSize: {
       xs: ["0.75rem", { lineHeight: "1rem" }],
@@ -225,6 +231,9 @@ module.exports = {
       "7xl": ["4.5rem", { lineHeight: "1" }],
       "8xl": ["6rem", { lineHeight: "1" }],
       "9xl": ["8rem", { lineHeight: "1" }],
+      "14px": "14px",
+      "36px": "36px",
+      "24px": "24px",
     },
     fontWeight: {
       thin: "100",
@@ -455,6 +464,9 @@ module.exports = {
       8: "2rem",
       9: "2.25rem",
       10: "2.5rem",
+      "17px": "17px",
+      "36px": "36px",
+      "54px": "54px",
     },
     listStyleType: {
       none: "none",

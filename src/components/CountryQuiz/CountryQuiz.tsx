@@ -1,16 +1,23 @@
 import React, { Component } from "react";
+import QuestionCard from "../QuestionCard";
 
-import { CopyRightsMessage, QuizComponentContainer } from "./styledComponent";
+import {
+  CopyRightsMessage,
+  CountryQuizTitle,
+  QuestionsContainer,
+  QuizComponentContainer,
+} from "./styledComponent";
 
-class CountryQuiz extends Component {
-  render() {
-    return (
-      <QuizComponentContainer>
-        CountryQuiz
-        <CopyRightsMessage>Ganesh Kosuri @ DevChallenges.io</CopyRightsMessage>
-      </QuizComponentContainer>
-    );
-  }
+function CountryQuiz() {
+  return (
+    <QuizComponentContainer>
+      <QuestionsContainer>
+        <CountryQuizTitle>Country Quiz</CountryQuizTitle>
+        <QuestionCard />
+      </QuestionsContainer>
+      <CopyRightsMessage>Ganesh Kosuri @ DevChallenges.io</CopyRightsMessage>
+    </QuizComponentContainer>
+  );
 }
 
 export default CountryQuiz;
