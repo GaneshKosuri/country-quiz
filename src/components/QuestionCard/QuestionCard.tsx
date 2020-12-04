@@ -1,17 +1,18 @@
 import React, { ReactElement } from "react";
 
+import Button from "../../Common/components/Button";
 import UndrawAdventureIcon from "../../icons/UndrawAdventureIcon";
-import { getCapitalQuestionWithOptions } from "../../utils/questionUtils";
 
 import {
   QuestionCardContainer,
   UndrawAdventureIconContainer,
   QuestionContainer,
   QuestionTitle,
+  Footer,
+  ButtonText,
 } from "./styledComponents";
 
 function QuestionCard(): ReactElement {
-  console.log(getCapitalQuestionWithOptions([0, 1], "capital"));
   return (
     <QuestionCardContainer>
       <UndrawAdventureIconContainer>
@@ -20,6 +21,11 @@ function QuestionCard(): ReactElement {
       <QuestionContainer>
         <QuestionTitle>Kuala Lumpur is the capital of</QuestionTitle>
       </QuestionContainer>
+      <Footer>
+        <Button>
+          <ButtonText>Next</ButtonText>
+        </Button>
+      </Footer>
     </QuestionCardContainer>
   );
 }

@@ -23,3 +23,7 @@ export const PoppinsWhite36Bold = styled(BasePoppinsBold)`
 export const PoppinsChambray24Bold = styled(BasePoppinsBold)`
   ${tw`text-24px text-chambray`}
 `;
+
+export const PoppinsWhite18Bold = styled(BasePoppinsBold)`
+  ${tw`text-white text-18px`}
+`;

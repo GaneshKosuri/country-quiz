@@ -1,6 +1,7 @@
-import React from "react";
+import React, { ReactElement } from "react";
 
 import QuestionCard from "../QuestionCard";
+import useQuestionsState from "../QuestionsState/QuestionsState";
 
 import {
   CopyRightsMessage,
@@ -9,7 +10,20 @@ import {
   QuizComponentContainer,
 } from "./styledComponent";
 
-function CountryQuiz() {
+function CountryQuiz(): ReactElement {
+  const [
+    completedCapitalQuestions,
+    setCompletedCapitalQuestions,
+  ] = useQuestionsState();
+  const [
+    completedCountryQuestions,
+    setCompletedCountryQuestions,
+  ] = useQuestionsState();
+  const [
+    completedCountryFlagQuestions,
+    setCompletedCountryFlagQuestions,
+  ] = useQuestionsState();
+
   return (
     <QuizComponentContainer>
       <QuestionsContainer>
