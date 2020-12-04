@@ -11,7 +11,7 @@ import {
 } from "./styledComponents";
 
 function QuestionCard(): ReactElement {
-  console.log(getCapitalQuestionWithOptions([0, 1]));
+  console.log(getCapitalQuestionWithOptions([0, 1], "capital"));
   return (
     <QuestionCardContainer>
       <UndrawAdventureIconContainer>
