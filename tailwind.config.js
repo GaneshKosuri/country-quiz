@@ -3,6 +3,7 @@ const customColors = {
   seaBuckthorn: "#F9A826",
   cello: "#1D355D",
   silverTree: "#60BF88",
+  indigo70: "rgba(96, 102, 208, 0.7)",
 };
 
 const colors = require("tailwindcss/colors");
@@ -74,9 +75,13 @@ module.exports = {
       "10px": "10px",
       "15px": "15px",
       "18px": "18px",
+      "24px": "24px",
+      "27px": "27px",
       "32px": "32px",
       "36px": "36px",
+      "46px": "46px",
       "48px": "48px",
+      "70px": "70px",
       "464px": "464px",
       "542px": "542px",
     },

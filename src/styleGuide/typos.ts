@@ -16,6 +16,10 @@ export const BasePoppinsSemiBold = styled(BasePoppins)`
   ${tw`font-semibold`}
 `;
 
+export const BasePoppinsMedium = styled(BasePoppins)`
+  ${tw`font-medium`}
+`;
+
 export const MontSerratWhite14SemiBold = styled(BaseMontSerrat)`
   ${tw`font-semibold text-14px text-white`}
 `;
@@ -46,4 +50,12 @@ export const PoppinsSilverTree32Bold = styled(BasePoppinsBold)`
 
 export const PoppinsCello18SemiBold = styled(BasePoppinsSemiBold)`
   ${tw`text-cello text-18px`}
+`;
+
+export const PoppinsWhite24Medium = styled(BasePoppinsMedium)`
+  ${tw`text-white text-24px`}
+`;
+
+export const PoppinsWhite18Medium = styled(BasePoppinsMedium)`
+  ${tw`text-white text-18px`}
 `;

@@ -18,7 +18,7 @@ export const CopyRightsMessage = styled(MontSerratWhite14SemiBold)`
 `;
 
 export const QuestionsContainer = styled.div`
-  ${tw`flex flex-col w-auto`}
+  ${tw`flex flex-col w-auto box-border`}
 `;
 
 export const CountryQuizTitle = styled(PoppinsWhite36Bold)`

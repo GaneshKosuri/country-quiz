@@ -29,8 +29,8 @@ function CountryQuiz(): ReactElement {
     <QuizComponentContainer>
       <QuestionsContainer>
         <CountryQuizTitle>Country Quiz</CountryQuizTitle>
-        {/* <QuestionCard /> */}
-        <ResultsCard score={4} onClickTryAgain={() => alert("try again")} />
+        <QuestionCard />
+        {/* <ResultsCard score={4} onClickTryAgain={() => alert("try again")} /> */}
       </QuestionsContainer>
       <CopyRightsMessage>Ganesh Kosuri @ DevChallenges.io</CopyRightsMessage>
     </QuizComponentContainer>

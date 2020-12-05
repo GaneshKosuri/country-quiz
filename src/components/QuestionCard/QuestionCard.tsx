@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 
-import Button from "../../Common/components/Button";
 import UndrawAdventureIcon from "../../icons/UndrawAdventureIcon";
+import QuestionOption from "../QuestionOption";
 
 import {
   QuestionCardContainer,
@@ -10,9 +10,22 @@ import {
   QuestionTitle,
   Footer,
   ButtonText,
+  NextButton,
+  OptionsList,
 } from "./styledComponents";
 
 function QuestionCard(): ReactElement {
+  const renderQuestionOptions = (): ReactElement => {
+    return (
+      <>
+        <QuestionOption />
+        <QuestionOption />
+        <QuestionOption />
+        <QuestionOption />
+      </>
+    );
+  };
+
   return (
     <QuestionCardContainer>
       <UndrawAdventureIconContainer>
@@ -20,11 +33,12 @@ function QuestionCard(): ReactElement {
       </UndrawAdventureIconContainer>
       <QuestionContainer>
         <QuestionTitle>Kuala Lumpur is the capital of</QuestionTitle>
+        <OptionsList>{renderQuestionOptions()}</OptionsList>
       </QuestionContainer>
       <Footer>
-        <Button>
+        <NextButton onClick={() => alert("next question")}>
           <ButtonText>Next</ButtonText>
-        </Button>
+        </NextButton>
       </Footer>
     </QuestionCardContainer>
   );
