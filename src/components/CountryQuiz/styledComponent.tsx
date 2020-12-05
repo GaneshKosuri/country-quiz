@@ -6,7 +6,7 @@ import {
 } from "../../styleGuide/typos";
 
 export const QuizComponentContainer = styled.div`
-  ${tw`w-full flex justify-center items-center flex-col h-screen`}
+  ${tw`w-full flex justify-center items-center flex-col h-screen relative`}
   background-image: url('https://i.ibb.co/jH9Pn6D/background.png');
   background-size: cover;
   background-position-y: center;
@@ -14,7 +14,7 @@ export const QuizComponentContainer = styled.div`
 `;
 
 export const CopyRightsMessage = styled(MontSerratWhite14SemiBold)`
-  ${tw`text-white`}
+  ${tw`text-white absolute bottom-15px`}
 `;
 
 export const QuestionsContainer = styled.div`

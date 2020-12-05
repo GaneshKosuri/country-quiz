@@ -2,6 +2,7 @@ import React, { ReactElement } from "react";
 
 import QuestionCard from "../QuestionCard";
 import useQuestionsState from "../QuestionsState/QuestionsState";
+import ResultsCard from "../ResultsCard";
 
 import {
   CopyRightsMessage,
@@ -28,7 +29,8 @@ function CountryQuiz(): ReactElement {
     <QuizComponentContainer>
       <QuestionsContainer>
         <CountryQuizTitle>Country Quiz</CountryQuizTitle>
-        <QuestionCard />
+        {/* <QuestionCard /> */}
+        <ResultsCard score={4} onClickTryAgain={() => alert("try again")} />
       </QuestionsContainer>
       <CopyRightsMessage>Ganesh Kosuri @ DevChallenges.io</CopyRightsMessage>
     </QuizComponentContainer>

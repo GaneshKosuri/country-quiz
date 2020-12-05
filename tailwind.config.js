@@ -1,6 +1,8 @@
 const customColors = {
   chambray: "#2F527B",
   seaBuckthorn: "#F9A826",
+  cello: "#1D355D",
+  silverTree: "#60BF88",
 };
 
 const colors = require("tailwindcss/colors");
@@ -71,9 +73,12 @@ module.exports = {
       96: "24rem",
       "10px": "10px",
       "15px": "15px",
+      "18px": "18px",
       "32px": "32px",
       "36px": "36px",
+      "48px": "48px",
       "464px": "464px",
+      "542px": "542px",
     },
     animation: {
       none: "none",
@@ -237,7 +242,9 @@ module.exports = {
       "14px": "14px",
       "18px": "18px",
       "24px": "24px",
+      "32px": "32px",
       "36px": "36px",
+      "48px": "48px",
     },
     fontWeight: {
       thin: "100",
@@ -469,8 +476,10 @@ module.exports = {
       9: "2.25rem",
       10: "2.5rem",
       "17px": "17px",
+      "27px": "27px",
       "36px": "36px",
       "54px": "54px",
+      "72px": "72px",
     },
     listStyleType: {
       none: "none",
