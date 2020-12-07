@@ -1,4 +1,4 @@
-import tw, { styled } from "twin.macro";
+import tw, { styled, TwStyle } from "twin.macro";
 
 import {
   PoppinsWhite18Medium,
@@ -6,10 +6,7 @@ import {
 } from "../../styleGuide/typos";
 
 export const QuestionOptionContainer = styled.div`
-  ${tw`rounded-12px p-15px flex items-center cursor-pointer border-2 border-solid border-indigo70 my-15px`}
-  &:hover {
-    ${tw`bg-seaBuckthorn border-seaBuckthorn`}
-  }
+  ${tw`rounded-12px p-15px flex items-center cursor-pointer border-2 border-solid border-indigo70 my-15px hover:bg-seaBuckthorn hover:border-seaBuckthorn`}
 `;
 
 export const OptionNumber = styled(PoppinsWhite24Medium)`

@@ -8,11 +8,15 @@ import {
 
 interface QuestionOptionProps {
   isDisabled: boolean;
+  optionNumber: string;
+  optionContent: string;
+  optionType: string;
 }
 
 function QuestionOption(): ReactElement {
+  // const { isDisabled, optionContent, optionNumber, optionType } = props;
   return (
-    <QuestionOptionContainer>
+    <QuestionOptionContainer isDisabled={true}>
       <OptionNumber>A</OptionNumber>
       <OptionContent>india</OptionContent>
     </QuestionOptionContainer>

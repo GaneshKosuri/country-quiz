@@ -14,6 +14,18 @@ import {
   OptionsList,
 } from "./styledComponents";
 
+interface OptionType {
+  optionNumber: string;
+  optionContent: string;
+  optionType: string;
+}
+
+interface QuestionCardProps {
+  flag?: string;
+  question: string;
+  options: Array<OptionType>;
+}
+
 function QuestionCard(): ReactElement {
   const renderQuestionOptions = (): ReactElement => {
     return (
